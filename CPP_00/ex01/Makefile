@@ -1,6 +1,6 @@
 NAME = phonebook
 CPP = c++
-CPPFLAGS =   -std=c++98
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -rf
 
 SRC = src/main.cpp \
