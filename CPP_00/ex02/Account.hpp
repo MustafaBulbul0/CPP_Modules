@@ -21,38 +21,38 @@ class Account {
 
 public:
 
-	typedef Account		t;
+	typedef Account		t;						// Account sınıfı için takma ad
 
-	static int	getNbAccounts( void );
-	static int	getTotalAmount( void );
-	static int	getNbDeposits( void );
-	static int	getNbWithdrawals( void );
-	static void	displayAccountsInfos( void );
+	static int	getNbAccounts( void );			// Toplam hesap sayısını döndürür
+	static int	getTotalAmount( void );			// Tüm hesaplardaki toplam parayı döndürür
+	static int	getNbDeposits( void );			// Toplam yatırma işlemi sayısını döndürür
+	static int	getNbWithdrawals( void );		// Toplam çekme işlemi sayısını döndürür
+	static void	displayAccountsInfos( void );	// Tüm hesapların özet bilgisini ekrana yazar
 
-	Account( int initial_deposit );
-	~Account( void );
+	Account( int initial_deposit );				// Yeni hesap oluşturur
+	~Account( void );							// Hesap kapatılırken çağrılır
 
-	void	makeDeposit( int deposit );
-	bool	makeWithdrawal( int withdrawal );
-	int		checkAmount( void ) const;
-	void	displayStatus( void ) const;
+	void	makeDeposit( int deposit );			// Hesaba para yatırır
+	bool	makeWithdrawal( int withdrawal );	// Hesaptan para çeker
+	int		checkAmount( void ) const;			// Hesaptaki mevcut parayı döndürür
+	void	displayStatus( void ) const;		// Hesabın durumunu ekrana yazar
 
 
 private:
 
-	static int	_nbAccounts;
-	static int	_totalAmount;
-	static int	_totalNbDeposits;
-	static int	_totalNbWithdrawals;
+	static int	_nbAccounts;				// Toplam hesap sayısı
+	static int	_totalAmount;				// Tüm hesaplardaki toplam para
+	static int	_totalNbDeposits;			// Toplam yatırma işlemi sayısı
+	static int	_totalNbWithdrawals;		// Toplam çekme işlemi sayısı
 
-	static void	_displayTimestamp( void );
+	static void	_displayTimestamp( void );	// Zaman damgası ekrana yazar
 
-	int				_accountIndex;
-	int				_amount;
-	int				_nbDeposits;
-	int				_nbWithdrawals;
+	int				_accountIndex;			// Hesabın sıra numarası
+	int				_amount;				// Hesaptaki para miktarı
+	int				_nbDeposits;			// Bu hesaba yapılan yatırma sayısı
+	int				_nbWithdrawals;			// Bu hesaptan yapılan çekme sayısı
 
-	Account( void );
+	Account( void );						// Default constructor (kullanılmıyor)
 
 };
 
