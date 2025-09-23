@@ -1,6 +1,6 @@
 # include "../include/mbstd.hpp"
 
-void	s_phonebook::add_new_person(int	index)
+void	phonebook::add_new_person(int	index)
 {
 	name = user_input("Name:");
 	lastName = user_input("Last Name:");
@@ -9,7 +9,7 @@ void	s_phonebook::add_new_person(int	index)
 	darkestSecret = user_input("Darkest Secret:");
 }
 
-void	s_phonebook::person_info(int index)
+void	phonebook::person_info(int index)
 {
 		std::cout << "|-------------------------------------------|\n"
 				  << "|     Index|First Name| Last Name|  Nickname|\n"
@@ -38,7 +38,7 @@ std::string	user_input(std::string ques)
 	return (s);
 }
 
-void	search_person(s_phonebook *book)
+void	search_person(phonebook *book)
 {
 	std::string input;
 	int			index;

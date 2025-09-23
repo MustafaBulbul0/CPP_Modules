@@ -12,8 +12,8 @@
 #define YELLOW "\033[33m"
 #define RESET "\033[0m"
 
-void		init_book(s_phonebook *book);
-void		search_person(s_phonebook *book);
+void		init_book(phonebook *book);
+void		search_person(phonebook *book);
 int			is_number(std::string s);
 std::string	write_ten_char(std::string name);
 std::string	user_input(std::string ques);

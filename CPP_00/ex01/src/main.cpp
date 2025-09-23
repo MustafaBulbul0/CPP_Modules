@@ -2,7 +2,7 @@
 
 int main()
 {
-	s_phonebook book[9];
+	phonebook book[9];
 	std::string	input;
 	int			index;
 

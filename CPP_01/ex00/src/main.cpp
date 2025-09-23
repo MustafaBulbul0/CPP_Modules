@@ -6,6 +6,11 @@ int main()
 
 	randomChump("Foo");
 	nZombie = newZombie("ck");
+	if (!nZombie)
+	{
+		std::cout << "Allocation error\n";
+		return (1);
+	}
 	nZombie->announce();
 	delete (nZombie);
 	return (0);

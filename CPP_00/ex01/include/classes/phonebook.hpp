@@ -3,7 +3,7 @@
 
 # include <iostream>
 
-class s_phonebook
+class phonebook
 {
 	private:
 		std::string	name;
@@ -12,7 +12,7 @@ class s_phonebook
 		std::string	phoneNumber;
 		std::string	darkestSecret;
 	public:
-		void	setName(){name = "";}
+		void	setName();
 		int		is_empty();
 		void	add_new_person(int	index);
 		void	person_info(int	index);

@@ -1,6 +1,6 @@
 # include "../include/mbstd.hpp"
 
-void	init_book(s_phonebook *book)
+void	init_book(phonebook *book)
 {
 	int	i;
 
@@ -9,7 +9,7 @@ void	init_book(s_phonebook *book)
 		book[i].setName();
 }
 
-int		s_phonebook::is_empty()
+int		phonebook::is_empty()
 {
 	if (name.empty())
 		return (1);
@@ -30,4 +30,9 @@ int	is_number(std::string s)
 		i++;
 	}
 	return (1);
+}
+
+void	phonebook::setName()
+{
+	name = "";
 }
