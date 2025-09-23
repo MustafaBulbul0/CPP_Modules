@@ -1,6 +1,6 @@
 # include "../include/mbstd.hpp"
 
-void	phonebook::add_new_person(int	index)
+void	phonebook::add_new_person()
 {
 	name = user_input("Name:");
 	lastName = user_input("Last Name:");

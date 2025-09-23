@@ -14,7 +14,10 @@ int main()
 				  << YELLOW << "$>" << RESET;
 		getline(std::cin, input);
 		if (input.compare("ADD") == 0)
-			book[index % 9].add_new_person(index++ % 9);
+		{
+			book[index % 9].add_new_person();
+			index++;
+		}
 		else if (input.compare("SEARCH") == 0)
 			search_person(book);
 		else if (input.compare("EXIT") == 0)

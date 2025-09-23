@@ -14,7 +14,7 @@ class phonebook
 	public:
 		void	setName();
 		int		is_empty();
-		void	add_new_person(int	index);
+		void	add_new_person();
 		void	person_info(int	index);
 
 };
