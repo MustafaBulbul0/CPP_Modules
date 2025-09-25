@@ -9,5 +9,8 @@ int	main(int ac, char **av)
 	text = read_file(av[1]);
 	if (text.empty())
 		return (2);
-	text = ch_text(text, av[1], av[2]);
+	text = ch_text(text, av[2], av[3]);
+	if (output_file(text, av[1]).empty())
+		return (3);
+	return (0);	
 }

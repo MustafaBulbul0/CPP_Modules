@@ -7,5 +7,6 @@
 
 std::string	read_file(char	*path);
 std::string	ch_text(std::string text, std::string s1, std::string s2);
+std::string	output_file(std::string text, std::string name);
 
 #endif

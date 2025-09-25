@@ -1,6 +1,6 @@
-NAME = violence
+NAME = replace
 CPP = c++
-CPPFLAGS = -std=c++98
+CPPFLAGS = -std=c++98 -g
 RM = rm -rf
 
 SRC = src/main.cpp src/utils.cpp
